@@ -6,9 +6,6 @@ void main(){
     for (int i = 0; i < length; i++)
     {
         scanf("%d", &a[i]);
-    }
-    for (int i = 0; i < length; i++)
-    {
         sum+=a[i];
     }
     printf("%d", sum);
