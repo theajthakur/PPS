@@ -9,10 +9,8 @@ void showArray(int arr[], int num){
 void main(){
     int n=10;
     int arr[10]={9,8,7,6,5,4,3,2,1,-1};
-    int tc=0;
     for (int i = 0; i < (n); i++){
         for (int j = 0; j < (n-i); j++){
-            tc++;
             if(arr[j]>arr[j+1]){
                 int tmp=arr[j];
                 arr[j]=arr[j+1];
@@ -21,5 +19,4 @@ void main(){
         }
     }
     showArray(arr, n);
-    printf("\n%d", tc);
 }
