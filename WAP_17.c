@@ -1,13 +1,24 @@
 #include <stdio.h>
+#include <math.h>
+
+int countDigits(int num){
+    int i=0;
+    while(num){
+        num/=10;
+        i++;
+    }
+    return i;
+}
 
 void main(){
     int num, rem, digit, sum, numT=0;
     printf("Enter a Number to Check whether it is Armstrong number or not: ");
     scanf("%d", &num);
+    int count=countDigits(num);
     numT=num;
     while(num!=0){
         rem=num%10;
-        sum+=rem*rem*rem;
+        sum+=pow(rem, count);
         num=(num-rem)/10;
     }
     if(numT==sum){
