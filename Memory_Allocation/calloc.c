@@ -11,7 +11,7 @@ void main(){
     int *ptr;
     int csize=0;
     printf("Enter size of Array: ");
-    scanf("%d",&csize);
+    scanf("%d", &csize);
     ptr=(int*)calloc(csize, sizeof(int));
     for (int i = 0; i < csize; i++){
         printf("Enter Number %d: ", i+1);
