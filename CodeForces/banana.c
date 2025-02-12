@@ -11,7 +11,11 @@ int main(){
     for (int i = 1; i <= w; i++){
         totalPrice+=k*i;
     }
-    printf("%d", totalPrice-n);
+    int remain=totalPrice-n;
+    if(n>totalPrice){
+        remain=0;
+    }
+    printf("%d", remain);
     
 
     return 0;
