@@ -1,4 +1,3 @@
-// Online C compiler to run C program online
 #include <stdio.h>
 
 int isDistinct(int num){
@@ -19,7 +18,8 @@ int isDistinct(int num){
 int main() {
     int num;
     scanf("%d", &num);
-    for (int i = num+1; i < 9000; i++){
+    if(num>9000) return 1;
+    for (int i = num+1; i <= 9012; i++){
         if(isDistinct(i)==0){
             printf("%d\n", i);
             break;
